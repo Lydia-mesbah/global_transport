@@ -1,0 +1,27 @@
+body {
+    padding-top: 70px;
+}
+
+.hero {
+    height: 95vh;
+    background: url('../assets/images/hero.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+form .form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
