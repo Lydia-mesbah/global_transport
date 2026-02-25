@@ -38,7 +38,7 @@
 </nav>
 
 <!-- HEADER -->
-<section class="bg-dark text-white text-center py-5">
+<section class="bg-white text-dark text-center py-5">
     <div class="container">
         <h1 class="fw-bold">Contactez-nous</h1>
         <p class="lead">Nous sommes disponibles pour vos réservations et demandes d'information.</p>
@@ -98,7 +98,9 @@
                         <textarea name="message" rows="5" class="form-control" required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-warning fw-bold">Envoyer le message</button>
+                    <button type="submit" class="btn btn-warning fw-bold d-block mx-auto">
+                        Envoyer le message
+                    </button>
 
                     <p id="success-msg" class="text-success mt-3" style="display:none;">
                         Merci ! Votre message a été envoyé avec succès.
@@ -114,10 +116,43 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-black text-white text-center py-4">
+<footer class="bg-dark text-white pt-5 pb-4">
     <div class="container">
-        <p class="mb-1">© 2026 Global Transport</p>
-        <small>Transport de personnes et marchandises</small>
+        <div class="row text-center"> <!-- Tout le contenu centré -->
+
+            <!-- À propos -->
+            <div class="col-md-4 mb-3">
+                <h5>Global Transport</h5>
+            </div>
+
+            <!-- Liens rapides -->
+            <div class="col-md-4 mb-3">
+                <h5>Liens rapides</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                    <li><a href="services.html" class="text-white text-decoration-none">Nos Services</a></li>
+                    <li><a href="about.html" class="text-white text-decoration-none">À Propos</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact / Réseaux -->
+            <div class="col-md-4 mb-3">
+                <h5>Contactez-nous</h5>
+                <p class="mb-1"><i class="bi bi-telephone-fill"></i> 0745065939</p>
+                <p class="mb-1"><i class="bi bi-envelope-fill"></i> contact@globaltransport.com</p>
+                <a href="https://wa.me/212745065939" target="_blank" class="btn btn-success btn-sm mt-2">
+                    <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+        <hr class="bg-light">
+
+        <div class="text-center">
+            <p class="mb-0">&copy; 2026 Global Transport. Tous droits réservés.</p>
+        </div>
     </div>
 </footer>
 
