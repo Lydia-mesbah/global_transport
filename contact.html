@@ -2,26 +2,32 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact - Global Transport</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — Global Transport</title>
+    <meta name="description" content="Contactez Global Transport pour vos envois de marchandises ou demander un devis. Téléphone, email, WhatsApp — réponse rapide garantie.">
 
-    <!-- Bootstrap CSS -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Global Transport</a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/images/logo.png" alt="Logo" style="height: 50px;" class="me-2">
+            <span>Global<span class="brand-accent">Transport</span></span>
+        </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list text-white fs-2"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,137 +35,240 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Nos Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
-                <li class="nav-item ms-lg-3">
-                    <a class="btn btn-warning fw-bold active" href="contact.html">Contact</a>
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a class="btn btn-accent active" href="contact.html">
+                        <i class="bi bi-telephone-fill me-1"></i> Contact
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- HEADER -->
-<section class="bg-white text-dark text-center py-5">
+<!-- ============ HEADER ============ -->
+<section class="page-header">
     <div class="container">
-        <h1 class="fw-bold">Contactez-nous</h1>
-        <p class="lead">Nous sommes disponibles pour vos réservations et demandes d'information.</p>
+        <div class="breadcrumb-nav">
+            <a href="index.html">Accueil</a>
+            <i class="bi bi-chevron-right"></i>
+            <span>Contact</span>
+        </div>
+        <h1>Contactez-nous</h1>
+        <p class="lead">
+            Nous sommes à votre écoute pour vos demandes de devis, expéditions de marchandises
+            ou simples renseignements. Réponse rapide garantie.
+        </p>
     </div>
 </section>
 
-<!-- CONTACT SECTION -->
-<section class="py-5">
+<!-- ============ CONTACT ============ -->
+<section class="section">
     <div class="container">
-        <div class="row g-5">
+        <div class="row g-4">
 
             <!-- INFOS -->
-            <div class="col-md-5">
-                <h4 class="mb-4">Informations</h4>
+            <div class="col-lg-5 reveal">
+                <div class="contact-info-card">
+                    <span class="section-eyebrow">Coordonnées</span>
+                    <h3 class="mb-4">Restons en contact</h3>
+                    <p class="mb-4">Choisissez le moyen qui vous convient le mieux. Nous nous engageons à vous répondre dans les meilleurs délais.</p>
 
-                <p>
-                    <i class="bi bi-telephone-fill text-warning"></i>
-                    <strong>Téléphone :</strong> 07 45 06 59 39
-                </p>
+                    <div class="contact-info-item">
+                        <div class="icon-wrap"><i class="bi bi-telephone-fill"></i></div>
+                        <div>
+                            <div class="label">Téléphone</div>
+                            <a href="tel:0745065939" class="value">07 45 06 59 39</a>
+                        </div>
+                    </div>
 
-                <p>
-                    <i class="bi bi-envelope-fill text-warning"></i>
-                    <strong>Email :</strong> contact@globaltransport.com
-                </p>
+                    <div class="contact-info-item">
+                        <div class="icon-wrap"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <div class="label">Email</div>
+                            <a href="mailto:contact@globaltransport.com" class="value">contact@globaltransport.com</a>
+                        </div>
+                    </div>
 
-                <p>
-                    <i class="bi bi-geo-alt-fill text-warning"></i>
-                    <strong>Ville :</strong> Bobigny
-                </p>
+                    <div class="contact-info-item">
+                        <div class="icon-wrap"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <div class="label">Localisation</div>
+                            <div class="value">Bobigny, Île-de-France</div>
+                        </div>
+                    </div>
 
-                <hr>
+                    <div class="contact-info-item">
+                        <div class="icon-wrap"><i class="bi bi-clock-fill"></i></div>
+                        <div>
+                            <div class="label">Disponibilité</div>
+                            <div class="value">7j/7</div>
+                        </div>
+                    </div>
 
-                <h5 class="mt-4">Réservation rapide</h5>
-                <a href="https://wa.me/33745065939" target="_blank"
-                   class="btn btn-success mt-3">
-                    <i class="bi bi-whatsapp"></i> WhatsApp Business
-                </a>
+                    <hr class="my-4">
+
+                    <h5 class="mb-3">Devis rapide</h5>
+                    <p class="mb-3 text-secondary" style="font-size: 0.92rem;">
+                        Pour une réponse immédiate sur votre expédition, contactez-nous sur WhatsApp.
+                    </p>
+                    <a href="https://wa.me/33745065939" target="_blank" class="btn-whatsapp">
+                        <i class="bi bi-whatsapp"></i> WhatsApp Business
+                    </a>
+                </div>
             </div>
 
             <!-- FORMULAIRE -->
-            <div class="col-md-7">
-                <h4 class="mb-4">Envoyer un message</h4>
+            <div class="col-lg-7 reveal reveal-delay-1">
+                <div class="contact-form-card">
+                    <span class="section-eyebrow">Formulaire</span>
+                    <h3 class="mb-4">Envoyez-nous un message</h3>
 
-                <form id="contact-form">
-                    <div class="mb-3">
-                        <label class="form-label">Nom</label>
-                        <input type="text" name="name" class="form-control" required>
-                    </div>
+                    <form id="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Nom complet</label>
+                                <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="votre@email.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Téléphone <span class="text-muted">(optionnel)</span></label>
+                                <input type="tel" name="phone" class="form-control" placeholder="06 12 34 56 78">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Type de service</label>
+                                <select name="service" class="form-control" required>
+                                    <option value="">Sélectionnez un service</option>
+                                    <option>Livraison express</option>
+                                    <option>Transport de marchandises</option>
+                                    <option>Longue distance</option>
+                                    <option>Livraison particuliers</option>
+                                    <option>Transport de palettes</option>
+                                    <option>Service entreprises</option>
+                                    <option>Autre</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Votre message</label>
+                                <textarea name="message" rows="5" class="form-control" placeholder="Décrivez votre besoin (date, trajet, type et volume de marchandise...)" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-accent btn-lg mt-3 px-5">
+                                    <i class="bi bi-send-fill me-2"></i> Envoyer le message
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Message</label>
-                        <textarea name="message" rows="5" class="form-control" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-warning fw-bold d-block mx-auto">
-                        Envoyer le message
-                    </button>
-
-                    <p id="success-msg" class="text-success mt-3" style="display:none;">
-                        Merci ! Votre message a été envoyé avec succès.
-                    </p>
-                    <p id="error-msg" class="text-danger mt-3" style="display:none;">
-                        Oups ! Une erreur est survenue, réessayez plus tard.
-                    </p>
-                </form>
+                        <div id="success-msg" class="alert alert-success mt-4 d-flex align-items-center" style="display:none !important; border-radius: 12px; border: none;">
+                            <i class="bi bi-check-circle-fill me-2 fs-4"></i>
+                            <div>
+                                <strong>Merci !</strong> Votre message a été envoyé avec succès. Nous vous répondrons rapidement.
+                            </div>
+                        </div>
+                        <div id="error-msg" class="alert alert-danger mt-4 d-flex align-items-center" style="display:none !important; border-radius: 12px; border: none;">
+                            <i class="bi bi-exclamation-circle-fill me-2 fs-4"></i>
+                            <div>
+                                <strong>Oups !</strong> Une erreur est survenue, veuillez réessayer ou nous contacter par téléphone.
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white pt-5 pb-4">
-    <div class="container">
-        <div class="row align-items-center text-center text-md-start">
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner">
+    <div class="container text-center">
+        <h2 class="mb-3 reveal">Besoin d'une réponse immédiate ?</h2>
+        <p class="lead mb-4 reveal reveal-delay-1">
+            Appelez-nous directement pour discuter de votre expédition.
+        </p>
+        <div class="hero-actions reveal reveal-delay-2">
+            <a href="tel:0745065939" class="btn btn-accent btn-lg">
+                <i class="bi bi-telephone-fill me-2"></i> 07 45 06 59 39
+            </a>
+            <a href="https://wa.me/33745065939" target="_blank" class="btn btn-whatsapp">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
 
-            <!-- Logo + Nom -->
-            <div class="col-md-4 mb-3 d-flex align-items-center justify-content-center justify-content-md-start">
-                <img src="assets/images/logo.png" alt="Global Transport Logo" style="height:200px; margin-right:10px;">
-                <h5 class="mb-0">Global Transport</h5>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-12">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="Global Transport">
+                    <span class="name">Global<span>Transport</span></span>
+                </div>
+                <p>Votre partenaire de confiance pour le transport de marchandises. De la prise en charge à la livraison, un service professionnel et sécurisé.</p>
             </div>
 
-            <div class="col-md-4 mb-3">
-                <h5>Liens rapides</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-                    <li><a href="services.html" class="text-white text-decoration-none">Nos Services</a></li>
-                    <li><a href="about.html" class="text-white text-decoration-none">À Propos</a></li>
-                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            <div class="col-lg-2 col-md-4 col-6">
+                <h5>Navigation</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Nos Services</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
-            <div class="col-md-4 mb-3">
-                <h5>Contactez-nous</h5>
-                <p><i class="bi bi-telephone-fill"></i> 0745065939</p>
-                <a href="https://wa.me/33745065939" target="_blank" class="btn btn-success btn-sm mt-2">
-                    <i class="bi bi-whatsapp"></i> WhatsApp
-                </a>
+            <div class="col-lg-3 col-md-4 col-6">
+                <h5>Nos services</h5>
+                <ul class="footer-links">
+                    <li><a href="services.html">Livraison express</a></li>
+                    <li><a href="services.html">Transport de marchandises</a></li>
+                    <li><a href="services.html">Longue distance</a></li>
+                    <li><a href="services.html">Service entreprises</a></li>
+                </ul>
             </div>
 
+            <div class="col-lg-3 col-md-4">
+                <h5>Contact</h5>
+                <div class="footer-contact-item">
+                    <i class="bi bi-telephone-fill"></i>
+                    <a href="tel:0745065939">07 45 06 59 39</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:contact@globaltransport.com">contact@globaltransport.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Bobigny, Île-de-France</span>
+                </div>
+                <a href="https://wa.me/33745065939" target="_blank" class="btn-whatsapp mt-3">
+                    <i class="bi bi-whatsapp"></i> WhatsApp Business
+                </a>
+            </div>
         </div>
 
-        <hr class="bg-light">
-
-        <div class="text-center">
-            <p class="mb-0">&copy; 2026 Global Transport. Tous droits réservés.</p>
+        <div class="footer-bottom">
+            <p class="mb-0">&copy; 2026 Global Transport — Tous droits réservés.</p>
         </div>
     </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/33745065939" target="_blank" class="whatsapp-floating" aria-label="Contactez-nous sur WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
-<!-- Custom JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Form submit -->
 <script>
 const form = document.getElementById('contact-form');
+const successMsg = document.getElementById('success-msg');
+const errorMsg = document.getElementById('error-msg');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -167,8 +276,15 @@ form.addEventListener('submit', function(e) {
     const data = {
         name: form.name.value,
         email: form.email.value,
+        phone: form.phone.value,
+        service: form.service.value,
         message: form.message.value
     };
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Envoi en cours...';
+    submitBtn.disabled = true;
 
     fetch('https://formspree.io/f/mwvnarjj', {
         method: 'POST',
@@ -180,16 +296,21 @@ form.addEventListener('submit', function(e) {
     })
     .then(response => {
         if (response.ok) {
-            document.getElementById('success-msg').style.display = 'block';
-            document.getElementById('error-msg').style.display = 'none';
+            successMsg.style.setProperty('display', 'flex', 'important');
+            errorMsg.style.setProperty('display', 'none', 'important');
             form.reset();
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
             throw new Error('Erreur');
         }
     })
     .catch(error => {
-        document.getElementById('error-msg').style.display = 'block';
-        document.getElementById('success-msg').style.display = 'none';
+        errorMsg.style.setProperty('display', 'flex', 'important');
+        successMsg.style.setProperty('display', 'none', 'important');
+    })
+    .finally(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
     });
 });
 </script>
